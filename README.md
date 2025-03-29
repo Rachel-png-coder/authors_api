@@ -24,9 +24,12 @@ This project allows users to search for authors using the Open Library API. It i
    ```bash
    git clone https://github.com/yourusername/authors_api.git
    cd authors_api
+   or scp -r repository ubuntu@web-01 or web-02:/home/ubuntu/ 
   ## giving credit
 credit to the author and to the Open Library API for providing the data.
-Great thank to J. K. Rowling for creating this api
+Great thanks to J. K. Rowling for creating this api
+Open Library API (https://openlibrary.org/)
+
 
 **#author of this README.md**
 Rachel Toronga
