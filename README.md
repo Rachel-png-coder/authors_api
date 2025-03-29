@@ -26,7 +26,7 @@ This project allows users to search for authors using the Open Library API. It i
    cd authors_api
   ## giving credit
 credit to the author and to the Open Library API for providing the data.
-#This should give proper recognition to the creator and the tools used in the project!
+Great thank to J. K. Rowling for creating this api
 
 **#author of this README.md**
 Rachel Toronga
