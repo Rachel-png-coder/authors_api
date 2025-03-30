@@ -35,3 +35,35 @@ https://youtu.be/dpRs7k6lEVw
 **#author of this README.md**
 
 Rachel Toronga
+
+Deploying
+Ubuntu servers (Web01, Web02, Lb01)
+SSH access to all servers
+Git installed on all servers
+Deploy to Web01 & Web02
+Connect to Web01
+ssh username@web01_ip ssh username@web02_ip
+
+Update system and install Nginx
+sudo apt update && sudo apt upgrade -y sudo apt install nginx git -y
+
+Add the files in the web servers
+cd /var/www/html sudo vim index.html sudo vim styles.css sudo vim script.js sudo chown -R www-data:www-data /var/www/html
+
+Configure Nginx
+sudo nano /etc/nginx/sites-available/default
+
+Deploy on Lb01
+sudo apt update sudo apt install haproxy -y sudo nano /etc/haproxy/haproxy.cfg
+
+Configure HAProxy
+frontend http_front bind *:80 default_backend http_back
+
+backend http_back balance roundrobin server web01_ip:80 check
+server web02_ip:80 check
+
+HAProxy Status
+sudo systemctl status haproxy
+
+Open in browser
+open web01_ip address
