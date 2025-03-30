@@ -33,7 +33,5 @@ Open Library API (https://openlibrary.org/)
 https://youtu.be/dpRs7k6lEVw
 
 **#author of this README.md**
-Rachel Toronga
 
-#demo video
-https://drive.google.com/file/d/1OdgfOXBcmpgO8PyndSzVpyqgaqHXa2Z7/view?usp=sharing
+Rachel Toronga
